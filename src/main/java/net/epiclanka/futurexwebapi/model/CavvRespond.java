@@ -7,11 +7,13 @@ public class CavvRespond {
     private String FC;
     private String KX;
     private String KZ;
+    private String BB;
 
     public String getAO() {
         return AO;
     }
-@JsonProperty("AO")
+
+    @JsonProperty("AO")
     public void setAO(String AO) {
         this.AO = AO;
     }
@@ -19,7 +21,8 @@ public class CavvRespond {
     public String getFC() {
         return FC;
     }
-@JsonProperty("FC")
+
+    @JsonProperty("FC")
     public void setFC(String FC) {
         this.FC = FC;
     }
@@ -27,7 +30,8 @@ public class CavvRespond {
     public String getKX() {
         return KX;
     }
-@JsonProperty("KX")
+
+    @JsonProperty("KX")
     public void setKX(String KX) {
         this.KX = KX;
     }
@@ -35,9 +39,19 @@ public class CavvRespond {
     public String getKZ() {
         return KZ;
     }
-@JsonProperty("KZ")
+
+    @JsonProperty("KZ")
     public void setKZ(String KZ) {
         this.KZ = KZ;
+    }
+
+    public String getBB() {
+        return BB;
+    }
+
+    @JsonProperty("BB")
+    public void setBB(String BB) {
+        this.BB = BB;
     }
 
     @Override
@@ -47,6 +61,7 @@ public class CavvRespond {
                 ", FC='" + FC + '\'' +
                 ", KX='" + KX + '\'' +
                 ", KZ='" + KZ + '\'' +
+                ", BB='" + BB + '\'' +
                 '}';
     }
 }
